@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icon Redirect</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #icon {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="icon" onclick="redirectToSite()">
+  
+    <img src="your-icon.png" alt="Icon">
+  </div>
+
+  <script>
+    function redirectToSite() {
+     
+      window.location.href = "https://example.com";
+    }
+  </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icon Redirect</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: url(https://imgs.search.brave.com/396SVJfvSFg0LixhjzDncvVreTphP7uopEpUAnCeu0Q/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9wdWIt/c3RhdGljLmZvdG9y/LmNvbS9hc3NldHMv/YmcvODYwNTIzMGQt/YWU1OC00NTg0LWJm/NDQtMGJiYmEyZjhl/ZTFhLmpwZw) center fixed;
+      background-size: auto;
+   
+    }
+
+    #icons-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .icon {
+      margin: 15px;
+      cursor: pointer;
+      border-radius: 220%;
+      overflow: hidden;
+      width: 255px; 
+      height: 255px; 
+    }
+  </style>
+</head>
+<body>
+
+  <div id="icons-container">
+    <div class="icon" onclick="redirectToSite('https://www.facebook.com/')">
+      <img src="https://imgs.search.brave.com/FqvQW3MwbeIG4FRamyjL3cHmujUMEvgPqRBkxaU86W4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzQ2LzI2LzYy/LzM2MF9GXzI0NjI2/NjIzOV9wemI5RzFO/V214SEhFdk45M1Y4/WDVQcXB4bUZmTmRM/My5qcGc" alt="Facebook Icon">
+    </div>
+
+   
+
+    <div class="icon" onclick="redirectToSite('https://www.instagram.com/')">
+      <img src="https://i.pinimg.com/236x/58/a2/be/58a2bec02ecb40d12e507e2a212c46c6.jpg" alt="Instagram Icon">
+    </div>
+
+   
+    <div class="icon" onclick="redirectToSite('https://www.youtube.com/')">
+      <img src="https://imgs.search.brave.com/2f-0jDEreap0wsFekP2_6pt_K1n1dQWb9_j6nOqnxQg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8w/LzA5L1lvdVR1YmVf/ZnVsbC1jb2xvcl9p/Y29uXygyMDE3KS5z/dmc.svg" alt="YouTube Icon">
+    </div>
+  </div>
+
+  <script>
+    function redirectToSite(url) {
+      window.location.href = url;
+    }
+  </script>
+  
+</body>
+</html>
